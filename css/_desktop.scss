@@ -1,0 +1,341 @@
+%flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  height: 800px;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-size: contain;
+  text-align: center;
+  padding-top: 34x;
+  color: $w;
+
+  &_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    margin-bottom: 105px;
+  }
+
+  &_logo {
+    height: 33px;
+    img {
+      width: 170px;
+      height: 33px;
+    }
+  }
+
+  &_menu {
+  }
+
+  &_menu-items {
+  }
+
+  &_menu-item + .header_menu-item {
+    margin-left: 47px;
+  }
+
+  &_menu-link {
+    color: $w;
+    height: 56px;
+    background-color: transparent;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.128571px;
+  }
+
+  &_title {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 69px;
+    letter-spacing: 8.75px;
+    text-transform: uppercase;
+    margin-bottom: 97px;
+  }
+
+  &_arrow {
+  }
+}
+
+.active {
+  background: $w;
+  border-radius: 28px;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.107143px;
+  text-transform: uppercase;
+  color: #24303e;
+}
+.prop {
+  &_inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &_inner-content {
+    width: 720px;
+    height: 600px;
+    padding: 158px 110px 157px 165px;
+  }
+
+  &_inner-title {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.285714px;
+    color: #24303e;
+    margin-bottom: 32px;
+  }
+
+  &_inner-text {
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.128571px;
+    margin-bottom: 40px;
+  }
+
+  &_inner-link {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24303e;
+    width: 137px;
+    height: 25px;
+    text-align: center;
+  }
+
+  &_inner-bgfirst {
+    width: 720px;
+    height: 600px;
+    background-image: url(../images/desktop/image-transform.jpg);
+  }
+  &_inner-bgsecond {
+    width: 720px;
+    height: 600px;
+    background-image: url(../images/desktop/image-stand-out.jpg);
+  }
+}
+.yellow {
+  background-image: url(../images/Rectangle.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.pink {
+  background-image: url(../images/pink.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.services {
+  &_inner {
+    display: flex;
+  }
+
+  &_inner-item {
+    width: 720px;
+    height: 600px;
+    padding-top: 398px;
+  }
+
+  &_inner-title {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #052c3b;
+    opacity: 0.75;
+    margin-bottom: 27px;
+  }
+
+  &_inner-text {
+    width: 339px;
+    height: 81px;
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: -0.114286px;
+    color: #19536c;
+    margin: 0 auto;
+  }
+}
+.design {
+  background-image: url(../images/desktop/image-graphic-design.jpg);
+}
+.photo {
+  background-image: url(../images/desktop/image-photography.jpg);
+}
+.testim {
+  min-height: 777px;
+  padding: 165px 0;
+  text-align: center;
+
+  &_title {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 5px;
+    color: #a7aaad;
+    margin-bottom: 81px;
+  }
+
+  &_inner {
+    @extend %flexbox;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+  &_inner-item {
+    width: 350px;
+  }
+  &_inner-item:nth-child(1) .testim_inner-img {
+    background-image: url(../images/image-emily.jpg);
+  }
+  &_inner-item:nth-child(2) .testim_inner-img {
+    background-image: url(../images/image-thomas.jpg);
+  }
+  &_inner-item:nth-child(3) .testim_inner-img {
+    background-image: url(../images/image-jennie.jpg);
+  }
+
+  &_inner-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-size: contain;
+    margin: 0 auto;
+    margin-bottom: 58px;
+  }
+
+  &_inner-text {
+    margin-bottom: 69px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.128571px;
+    color: #5b636d;
+  }
+
+  &_inner-name {
+    margin-bottom: 9px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.128571px;
+    color: #24303e;
+  }
+
+  &_inner-position {
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: -0.1px;
+    color: #a7aaad;
+  }
+}
+.gallery {
+  &_inner {
+    @extend %flexbox;
+  }
+
+  &_inner-item {
+    width: 360px;
+    height: 447px;
+    background-size: contain;
+  }
+
+  &_inner-item:nth-child(1) {
+    background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+  }
+  &_inner-item:nth-child(2) {
+    background-image: url(../images/desktop/image-gallery-orange.jpg);
+  }
+  &_inner-item:nth-child(3) {
+    background-image: url(../images/desktop/image-gallery-cone.jpg);
+  }
+  &_inner-item:nth-child(4) {
+    background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+  }
+}
+.footer {
+  background: #90d4c6;
+  &_inner {
+    height: 350px;
+    @extend %flexbox;
+    justify-content: center;
+    align-items: center;
+  }
+  &_inner-content {
+    width: 297px;
+  }
+
+  &_inner-title {
+    background-image: url(../images/sunnyside.png);
+    width: 170px;
+    height: 33px;
+    margin: 0 auto 40px;
+  }
+
+  &_inner-menu {
+    margin-bottom: 88px;
+  }
+
+  &_inner-items {
+    @extend %flexbox;
+  }
+
+  &_inner-item {
+  }
+
+  &_inner-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.128571px;
+    color: #458d7e;
+  }
+  &_inner-sociallinks {
+    @extend %flexbox;
+  }
+  &_inner-sociallink {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &_inner-sociallink:nth-child(1) {
+    background-image: url(../images/icon-facebook.svg);
+  }
+  &_inner-sociallink:nth-child(2) {
+    background-image: url(../images/icon-instagram.svg);
+  }
+  &_inner-sociallink:nth-child(3) {
+    background-image: url(../images/icon-twitter.svg);
+  }
+  &_inner-sociallink:nth-child(4) {
+    background-image: url(../images/icon-pinterest.svg);
+  }
+}
